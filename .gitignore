@@ -1,57 +1,43 @@
-```
-# Build artifacts
-*.exe
-*.dll
-*.pdb
-*.mdb
-*.user
-*.userosscache
-*.suo
-*.cache
-*.nupkg
-*.snupkg
-bin/
-obj/
-out/
+```gitignore
+# Database files
+*.sqlite
 
-# Dependencies
-packages/
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.local
+*.env.*
 
 # Logs
 *.log
 
-# Environment specific
-.env
-.env.local
-.env.dev
-.env.test
-.env.prod
+# Temporary files
+*.tmp
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-desktop.ini
 
-# Testing
-coverage/
-htmlcov/
-.coverage
-*.coverage
-
-# IDE
-.vs/
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
 ```
